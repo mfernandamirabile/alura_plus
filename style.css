@@ -1,10 +1,45 @@
 :root {
-    --branco_princial: #FFFFFF;
-    --cinza_secundario: #C0C0C0;
-    --botao_azul: #167BF7;
+    --cor_princial: #FFFFFF;
+    --cor_secundaria: #C0C0C0;
+    --botao_destaque: #167BF7;
     --cor_de_fundo: #00030C;
 }
 
 body {
     background-color: var(--cor_de_fundo);
+    color: var(--cor_princial);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao_destaque);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor_princial);
+    display: block;
+}
+
+.secundario {
+    background-color: transparent;
+    border: 2px solid var(--cor_princial);
+}
+
+.container__aviso {
+    color: var(--cor_secundaria);
 }
