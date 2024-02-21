@@ -71,15 +71,16 @@ body {
 
 .secundario {
     align-items: center;
+    margin: 0 6em;
 }
 
 .secundario__img {
     width: 80%;
-    margin: 0 6em;
+    margin: 0 4em;
 }
 
-.secundario__descricao {
-    margin-right: 4em;
+.container__descricao {
+    padding: 2em;
 }
 
 .descricao__titulo {
@@ -90,12 +91,65 @@ body {
 }
 
 .descricao__paragrafo {
-    font-size: 16px;
     color: var(--cor_secundaria);
 }
 
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
 
-.terciario__img {
-    width: 80%;
-    margin: 0 6em;
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--cor_princial);
+}
+
+.lista_item {
+    font-size: 32px;
+    color: var(--cor_princial);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1.5em;
+    margin: 12em 3em 4em 4em;
+}
+
+.rodape__logo {
+    width: 8%;
+    margin-bottom: 1em;
+}
+
+.rodape__lista {
+    display: flex;
+    gap: 1em;
+}
+
+.lista__link {
+    list-style-type: none;
+}
+
+.rodape__link {
+    text-decoration: none;
+    color: var(--cor_princial);
+    font-size: 16px;
+}
+
+.rodape_paragrafo {
+    color: var(--cor_secundaria);
+    font-size: 14px;
 }
