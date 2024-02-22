@@ -5,6 +5,8 @@
     --cor_princial: #FFFFFF;
     --cor_secundaria: #C0C0C0;
     --botao_destaque: #167BF7;
+    --botao_destaque_efeito:#3c92fa; 
+    --botao_secundario_destaque: #888888;
     --cor_de_fundo: #00030C;
     --fonte-principal : 'Inter';
 }
@@ -59,9 +61,18 @@ body {
     margin-bottom: 1em;
 }
 
+.container__botao:hover {
+    background-color: var(--botao_destaque_efeito);
+    color: var(--cor_de_fundo);
+}
+
 .segundo {
     background-color: transparent;
     border: 2px solid var(--cor_princial);
+}
+
+.segundo:hover{
+    background-color: var(--botao_secundario_destaque);
 }
 
 .container__aviso {
@@ -126,7 +137,7 @@ body {
     text-align: center;
     align-items: center;
     gap: 1.5em;
-    margin: 12em 3em 4em 4em;
+    margin: 12em 3em 4em 3em;
 }
 
 .rodape__logo {
@@ -147,6 +158,10 @@ body {
     text-decoration: none;
     color: var(--cor_princial);
     font-size: 16px;
+}
+
+.rodape__link:hover {
+    color: var(--botao_destaque);
 }
 
 .rodape_paragrafo {
